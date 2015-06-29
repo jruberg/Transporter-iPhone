@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		115FBB381522F0B7006BFF77 /* TPRTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 115FBB371522F0B7006BFF77 /* TPRTabBarController.m */; };
+		187A246C1B40E187006865B5 /* libFlurry_6.6.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 187A246A1B40E165006865B5 /* libFlurry_6.6.0.a */; };
+		187A246E1B40E4CA006865B5 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 187A246D1B40E4CA006865B5 /* Security.framework */; };
 		1D3623260D0F684500981E51 /* kronosAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* kronosAppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
@@ -22,7 +24,6 @@
 		FA07A2A0151BA3CC001CCC6E /* bart-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = FA07A29F151BA3CC001CCC6E /* bart-icon.png */; };
 		FA07A2A2151BA3FC001CCC6E /* rail-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = FA07A2A1151BA3FC001CCC6E /* rail-icon.png */; };
 		FA07A2A4151BA41E001CCC6E /* blue-button.png in Resources */ = {isa = PBXBuildFile; fileRef = FA07A2A3151BA41E001CCC6E /* blue-button.png */; };
-		FA07A2A7151BA78A001CCC6E /* libFlurryAnalytics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FA118559141C80D900793FCE /* libFlurryAnalytics.a */; };
 		FA07A519124D682C0013FE28 /* bart-blue@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FA07A515124D682C0013FE28 /* bart-blue@2x.png */; };
 		FA07A51A124D682C0013FE28 /* bart-green@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FA07A516124D682C0013FE28 /* bart-green@2x.png */; };
 		FA07A51B124D682C0013FE28 /* bart-orange@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FA07A517124D682C0013FE28 /* bart-orange@2x.png */; };
@@ -329,6 +330,12 @@
 		115FBB4F1522F61E006BFF77 /* tab-nearme-active.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab-nearme-active.png"; sourceTree = "<group>"; };
 		115FBB501522F61E006BFF77 /* tab-nearme-active@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab-nearme-active@2x.png"; sourceTree = "<group>"; };
 		115FBB511522F61E006BFF77 /* tab-nearme.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab-nearme.png"; sourceTree = "<group>"; };
+		187A245E1B401B93006865B5 /* libFlurry_6.6.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libFlurry_6.6.0.a; path = Classes/FlurryAnalytics/libFlurry_6.6.0.a; sourceTree = "<group>"; };
+		187A24651B402342006865B5 /* libFlurry_6.6.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libFlurry_6.6.0.a; path = Classes/Flurry/libFlurry_6.6.0.a; sourceTree = "<group>"; };
+		187A24681B40E165006865B5 /* Flurry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Flurry.h; sourceTree = "<group>"; };
+		187A24691B40E165006865B5 /* FlurryWatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlurryWatch.h; sourceTree = "<group>"; };
+		187A246A1B40E165006865B5 /* libFlurry_6.6.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFlurry_6.6.0.a; sourceTree = "<group>"; };
+		187A246D1B40E4CA006865B5 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D3623240D0F684500981E51 /* kronosAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kronosAppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* kronosAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = kronosAppDelegate.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
@@ -363,8 +370,6 @@
 		FA07A545124D6B390013FE28 /* pin-bart@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pin-bart@2x.png"; sourceTree = "<group>"; };
 		FA083A4A1163243C00E2C5CA /* green dot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "green dot.png"; sourceTree = "<group>"; };
 		FA083A4B1163243C00E2C5CA /* yellow dot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "yellow dot.png"; sourceTree = "<group>"; };
-		FA118558141C80D900793FCE /* FlurryAnalytics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlurryAnalytics.h; sourceTree = "<group>"; };
-		FA118559141C80D900793FCE /* libFlurryAnalytics.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFlurryAnalytics.a; sourceTree = "<group>"; };
 		FA12380811855B21004B0A47 /* segment-map-button-default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "segment-map-button-default.png"; sourceTree = "<group>"; };
 		FA12380911855B21004B0A47 /* segment-map-button-selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "segment-map-button-selected.png"; sourceTree = "<group>"; };
 		FA128C1B11742F63006D3B34 /* map-marker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "map-marker.png"; sourceTree = "<group>"; };
@@ -731,7 +736,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA07A2A7151BA78A001CCC6E /* libFlurryAnalytics.a in Frameworks */,
+				187A246E1B40E4CA006865B5 /* Security.framework in Frameworks */,
+				187A246C1B40E187006865B5 /* libFlurry_6.6.0.a in Frameworks */,
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
 				288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */,
@@ -763,6 +769,17 @@
 			path = Classes;
 			sourceTree = "<group>";
 		};
+		187A24671B40E165006865B5 /* Flurry */ = {
+			isa = PBXGroup;
+			children = (
+				187A24681B40E165006865B5 /* Flurry.h */,
+				187A24691B40E165006865B5 /* FlurryWatch.h */,
+				187A246A1B40E165006865B5 /* libFlurry_6.6.0.a */,
+			);
+			name = Flurry;
+			path = Classes/Flurry;
+			sourceTree = "<group>";
+		};
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -786,7 +803,7 @@
 		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
 			isa = PBXGroup;
 			children = (
-				FA118557141C80D900793FCE /* FlurryAnalytics */,
+				187A24671B40E165006865B5 /* Flurry */,
 				FA2155EF12A9A47100C5FD71 /* Appirater */,
 				FAC2F76A11C3212900DE4B5F /* TouchXML */,
 				32CA4F630368D1EE00C91783 /* transporter_Prefix.pch */,
@@ -815,6 +832,9 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				187A246D1B40E4CA006865B5 /* Security.framework */,
+				187A24651B402342006865B5 /* libFlurry_6.6.0.a */,
+				187A245E1B401B93006865B5 /* libFlurry_6.6.0.a */,
 				FA21561112A9A51600C5FD71 /* SystemConfiguration.framework */,
 				FA21560D12A9A50D00C5FD71 /* CFNetwork.framework */,
 				3FAEC71F125D515200F75025 /* SenTestingKit.framework */,
@@ -837,16 +857,6 @@
 				FA5F0C2C151D71850047EAA4 /* FavoritesTest.m */,
 			);
 			name = Tests;
-			sourceTree = "<group>";
-		};
-		FA118557141C80D900793FCE /* FlurryAnalytics */ = {
-			isa = PBXGroup;
-			children = (
-				FA118558141C80D900793FCE /* FlurryAnalytics.h */,
-				FA118559141C80D900793FCE /* libFlurryAnalytics.a */,
-			);
-			name = FlurryAnalytics;
-			path = Classes/FlurryAnalytics;
 			sourceTree = "<group>";
 		};
 		FA12383111855C31004B0A47 /* Views Objects */ = {
@@ -1995,10 +2005,11 @@
 				GCC_PREFIX_HEADER = transporter_Prefix.pch;
 				GCC_THUMB_SUPPORT = NO;
 				INFOPLIST_FILE = "transporter-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/Classes/FlurryAnalytics\"",
+					"\"$(SRCROOT)/Classes/Flurry\"",
+					"$(PROJECT_DIR)/Classes/Flurry",
 				);
 				OTHER_LDFLAGS = (
 					"-weak_framework",
@@ -2024,10 +2035,11 @@
 				GCC_PREFIX_HEADER = transporter_Prefix.pch;
 				GCC_THUMB_SUPPORT = NO;
 				INFOPLIST_FILE = "transporter-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/Classes/FlurryAnalytics\"",
+					"\"$(SRCROOT)/Classes/Flurry\"",
+					"$(PROJECT_DIR)/Classes/Flurry",
 				);
 				OTHER_LDFLAGS = (
 					"-weak_framework",
@@ -2177,10 +2189,11 @@
 				GCC_PREFIX_HEADER = transporter_Prefix.pch;
 				GCC_THUMB_SUPPORT = NO;
 				INFOPLIST_FILE = "transporter-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/Classes/FlurryAnalytics\"",
+					"\"$(SRCROOT)/Classes/Flurry\"",
+					"$(PROJECT_DIR)/Classes/Flurry",
 				);
 				OTHER_LDFLAGS = (
 					"-weak_framework",
@@ -2248,10 +2261,11 @@
 				GCC_PREFIX_HEADER = transporter_Prefix.pch;
 				GCC_THUMB_SUPPORT = NO;
 				INFOPLIST_FILE = "transporter-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/Classes/FlurryAnalytics\"",
+					"\"$(SRCROOT)/Classes/Flurry\"",
+					"$(PROJECT_DIR)/Classes/Flurry",
 				);
 				OTHER_LDFLAGS = (
 					"-weak_framework",

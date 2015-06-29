@@ -29,9 +29,8 @@
 #import "StopsTVC.h"
 #import "LinesVC.h"
 #import "LiveRouteTVC.h"
-#import "FlurryAnalytics.h"
 #import "TouchXML.h"
-#import "FlurryAnalytics.h"
+#import "Flurry.h"
 #import "Appirater.h"
 
 @implementation kronosAppDelegate
@@ -53,10 +52,10 @@
     NSDictionary *configData = [NSDictionary dictionaryWithContentsOfFile:finalPath];
 	NSString *flurryKey = [configData valueForKey:@"flurryKey"];
 
-    [FlurryAnalytics startSession:flurryKey];
+    [Flurry startSession:flurryKey];
 	
-    [FlurryAnalytics setSessionReportsOnCloseEnabled:NO];
-    [FlurryAnalytics setSessionReportsOnPauseEnabled:NO];
+    [Flurry setSessionReportsOnCloseEnabled:NO];
+    [Flurry setSessionReportsOnPauseEnabled:NO];
 
 	[application setStatusBarStyle:UIStatusBarStyleBlackOpaque]; 
 	
